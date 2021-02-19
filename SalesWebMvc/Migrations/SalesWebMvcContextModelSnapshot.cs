@@ -54,6 +54,8 @@ namespace SalesWebMvc.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<double>("BaseSalary");
+
                     b.Property<DateTime>("BirthDate");
 
                     b.Property<int?>("DepartmentId");
@@ -61,8 +63,6 @@ namespace SalesWebMvc.Migrations
                     b.Property<string>("Email");
 
                     b.Property<string>("Name");
-
-                    b.Property<double>("Salary");
 
                     b.HasKey("Id");
 
